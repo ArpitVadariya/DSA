@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class InBuiltExamples {
+
+    public static void main(String[] args) {
+
+        System.out.println(" STACK ");
+        Stack<Integer> stack = new Stack<>();
+        stack.push(34);
+        stack.push(45);
+        stack.push(2);
+        stack.push(9);
+        stack.push(18);
+
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        // System.out.println(stack.pop());
+
+        System.out.println(" QUEUE ");
+        // here queue is Interface
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(3);
+        queue.add(6);
+        queue.add(5);
+        queue.add(19);
+        queue.add(1);
+
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+
+        System.out.println(" DEQUEUE ");
+
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.add(89);
+        deque.addLast(78);
+        System.out.println(deque.removeFirst());
+        // etc etc
+    }
+}
